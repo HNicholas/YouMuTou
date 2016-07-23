@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B0BDF051D431F4100A2D072 /* YMLoginAndRegisteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BDF031D431F4100A2D072 /* YMLoginAndRegisteController.m */; };
+		8B0BDF061D431F4100A2D072 /* YMLoginAndRegisteController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B0BDF041D431F4100A2D072 /* YMLoginAndRegisteController.xib */; };
+		8B285F611D3CACCC006BE46F /* YMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B285F5F1D3CACCC006BE46F /* YMTableViewCell.m */; };
+		8B285F621D3CACCC006BE46F /* YMTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B285F601D3CACCC006BE46F /* YMTableViewCell.xib */; };
+		8B285F661D3CB19E006BE46F /* YMTableViewContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B285F641D3CB19E006BE46F /* YMTableViewContentCell.m */; };
+		8B285F671D3CB19E006BE46F /* YMTableViewContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B285F651D3CB19E006BE46F /* YMTableViewContentCell.xib */; };
+		8B285F6A1D3CB1F4006BE46F /* YMTableViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B285F691D3CB1F4006BE46F /* YMTableViewContent.m */; };
+		8B285F6D1D3CC638006BE46F /* YMTableContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B285F6C1D3CC638006BE46F /* YMTableContentModel.m */; };
+		8B285F711D3CD3BF006BE46F /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B285F701D3CD3BF006BE46F /* data.plist */; };
+		8B44C23F1D42178E0090C940 /* YMNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B44C23E1D42178E0090C940 /* YMNetWorkManager.m */; };
+		8B6E88F81D3B34A0007112AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6E88F71D3B34A0007112AD /* main.m */; };
+		8B6E88FB1D3B34A0007112AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6E88FA1D3B34A0007112AD /* AppDelegate.m */; };
+		8B6E89011D3B34A0007112AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6E88FF1D3B34A0007112AD /* Main.storyboard */; };
+		8B6E89031D3B34A0007112AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B6E89021D3B34A0007112AD /* Assets.xcassets */; };
+		8B6E89061D3B34A0007112AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6E89041D3B34A0007112AD /* LaunchScreen.storyboard */; };
+		8B6E89111D3B34A0007112AD /* youMuTouTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6E89101D3B34A0007112AD /* youMuTouTests.m */; };
+		8B6E891C1D3B34A0007112AD /* youMuTouUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6E891B1D3B34A0007112AD /* youMuTouUITests.m */; };
+		8B6E89311D3B357E007112AD /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6E89301D3B357E007112AD /* HomeViewController.m */; };
+		8B6E89381D3B3C34007112AD /* YMNavgationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6E89371D3B3C34007112AD /* YMNavgationView.m */; };
+		8B6E893A1D3B878B007112AD /* YMNavgationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B6E89391D3B878B007112AD /* YMNavgationView.xib */; };
+		8B6E893D1D3B8DB2007112AD /* YMHomeTableHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6E893C1D3B8DB2007112AD /* YMHomeTableHeadView.m */; };
+		8ED70E840202DF61E6F8F9A3 /* libPods-youMuTou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C68B2336AD44B1096EE39999 /* libPods-youMuTou.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B6E890D1D3B34A0007112AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B6E88EB1D3B349F007112AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B6E88F21D3B349F007112AD;
+			remoteInfo = youMuTou;
+		};
+		8B6E89181D3B34A0007112AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B6E88EB1D3B349F007112AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B6E88F21D3B349F007112AD;
+			remoteInfo = youMuTou;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05EB8EF9AF1B713048EB4D78 /* Pods-youMuTou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-youMuTou.release.xcconfig"; path = "Pods/Target Support Files/Pods-youMuTou/Pods-youMuTou.release.xcconfig"; sourceTree = "<group>"; };
+		8B0BDF021D431F4100A2D072 /* YMLoginAndRegisteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMLoginAndRegisteController.h; sourceTree = "<group>"; };
+		8B0BDF031D431F4100A2D072 /* YMLoginAndRegisteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMLoginAndRegisteController.m; sourceTree = "<group>"; };
+		8B0BDF041D431F4100A2D072 /* YMLoginAndRegisteController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMLoginAndRegisteController.xib; sourceTree = "<group>"; };
+		8B285F5E1D3CACCC006BE46F /* YMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMTableViewCell.h; sourceTree = "<group>"; };
+		8B285F5F1D3CACCC006BE46F /* YMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMTableViewCell.m; sourceTree = "<group>"; };
+		8B285F601D3CACCC006BE46F /* YMTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMTableViewCell.xib; sourceTree = "<group>"; };
+		8B285F631D3CB19E006BE46F /* YMTableViewContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMTableViewContentCell.h; sourceTree = "<group>"; };
+		8B285F641D3CB19E006BE46F /* YMTableViewContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMTableViewContentCell.m; sourceTree = "<group>"; };
+		8B285F651D3CB19E006BE46F /* YMTableViewContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMTableViewContentCell.xib; sourceTree = "<group>"; };
+		8B285F681D3CB1F4006BE46F /* YMTableViewContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMTableViewContent.h; sourceTree = "<group>"; };
+		8B285F691D3CB1F4006BE46F /* YMTableViewContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMTableViewContent.m; sourceTree = "<group>"; };
+		8B285F6B1D3CC638006BE46F /* YMTableContentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMTableContentModel.h; sourceTree = "<group>"; };
+		8B285F6C1D3CC638006BE46F /* YMTableContentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMTableContentModel.m; sourceTree = "<group>"; };
+		8B285F701D3CD3BF006BE46F /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		8B44C23D1D42178E0090C940 /* YMNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMNetWorkManager.h; sourceTree = "<group>"; };
+		8B44C23E1D42178E0090C940 /* YMNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMNetWorkManager.m; sourceTree = "<group>"; };
+		8B6E88F31D3B349F007112AD /* youMuTou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = youMuTou.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B6E88F71D3B34A0007112AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8B6E88F91D3B34A0007112AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		8B6E88FA1D3B34A0007112AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
+		8B6E89001D3B34A0007112AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B6E89021D3B34A0007112AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B6E89051D3B34A0007112AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B6E89071D3B34A0007112AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B6E890C1D3B34A0007112AD /* youMuTouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = youMuTouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B6E89101D3B34A0007112AD /* youMuTouTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = youMuTouTests.m; sourceTree = "<group>"; };
+		8B6E89121D3B34A0007112AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B6E89171D3B34A0007112AD /* youMuTouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = youMuTouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B6E891B1D3B34A0007112AD /* youMuTouUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = youMuTouUITests.m; sourceTree = "<group>"; };
+		8B6E891D1D3B34A0007112AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B6E892F1D3B357E007112AD /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		8B6E89301D3B357E007112AD /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		8B6E89361D3B3C34007112AD /* YMNavgationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMNavgationView.h; sourceTree = "<group>"; };
+		8B6E89371D3B3C34007112AD /* YMNavgationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMNavgationView.m; sourceTree = "<group>"; };
+		8B6E89391D3B878B007112AD /* YMNavgationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMNavgationView.xib; sourceTree = "<group>"; };
+		8B6E893B1D3B8DB2007112AD /* YMHomeTableHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMHomeTableHeadView.h; sourceTree = "<group>"; };
+		8B6E893C1D3B8DB2007112AD /* YMHomeTableHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMHomeTableHeadView.m; sourceTree = "<group>"; };
+		C68B2336AD44B1096EE39999 /* libPods-youMuTou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-youMuTou.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F02D159E085342F17DBEFE11 /* Pods-youMuTou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-youMuTou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-youMuTou/Pods-youMuTou.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B6E88F01D3B349F007112AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED70E840202DF61E6F8F9A3 /* libPods-youMuTou.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6E89091D3B34A0007112AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6E89141D3B34A0007112AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21F078F7A0D1CA1C0F1EB808 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C68B2336AD44B1096EE39999 /* libPods-youMuTou.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63E5D5A46A4DCD77B77D4B8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F02D159E085342F17DBEFE11 /* Pods-youMuTou.debug.xcconfig */,
+				05EB8EF9AF1B713048EB4D78 /* Pods-youMuTou.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8B0BDEFE1D431EFC00A2D072 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8B0BDEFF1D431EFC00A2D072 /* Controller */,
+				8B0BDF001D431EFC00A2D072 /* Model */,
+				8B0BDF011D431EFC00A2D072 /* View */,
+			);
+			name = Login;
+			path = youMuTou/Classes/Login;
+			sourceTree = SOURCE_ROOT;
+		};
+		8B0BDEFF1D431EFC00A2D072 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8B0BDF021D431F4100A2D072 /* YMLoginAndRegisteController.h */,
+				8B0BDF031D431F4100A2D072 /* YMLoginAndRegisteController.m */,
+				8B0BDF041D431F4100A2D072 /* YMLoginAndRegisteController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8B0BDF001D431EFC00A2D072 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B0BDF011D431EFC00A2D072 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B44C23C1D4217760090C940 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				8B44C23D1D42178E0090C940 /* YMNetWorkManager.h */,
+				8B44C23E1D42178E0090C940 /* YMNetWorkManager.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		8B6E88EA1D3B349F007112AD = {
+			isa = PBXGroup;
+			children = (
+				8B6E88F51D3B34A0007112AD /* youMuTou */,
+				8B6E890F1D3B34A0007112AD /* youMuTouTests */,
+				8B6E891A1D3B34A0007112AD /* youMuTouUITests */,
+				8B6E88F41D3B349F007112AD /* Products */,
+				63E5D5A46A4DCD77B77D4B8A /* Pods */,
+				21F078F7A0D1CA1C0F1EB808 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8B6E88F41D3B349F007112AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B6E88F31D3B349F007112AD /* youMuTou.app */,
+				8B6E890C1D3B34A0007112AD /* youMuTouTests.xctest */,
+				8B6E89171D3B34A0007112AD /* youMuTouUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B6E88F51D3B34A0007112AD /* youMuTou */ = {
+			isa = PBXGroup;
+			children = (
+				8B6E892E1D3B3516007112AD /* Others */,
+				8B6E89291D3B34EA007112AD /* Classes */,
+				8B6E89021D3B34A0007112AD /* Assets.xcassets */,
+				8B6E89071D3B34A0007112AD /* Info.plist */,
+				8B6E88F61D3B34A0007112AD /* Supporting Files */,
+			);
+			path = youMuTou;
+			sourceTree = "<group>";
+		};
+		8B6E88F61D3B34A0007112AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B6E88F71D3B34A0007112AD /* main.m */,
+				8B285F701D3CD3BF006BE46F /* data.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B6E890F1D3B34A0007112AD /* youMuTouTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B6E89101D3B34A0007112AD /* youMuTouTests.m */,
+				8B6E89121D3B34A0007112AD /* Info.plist */,
+			);
+			path = youMuTouTests;
+			sourceTree = "<group>";
+		};
+		8B6E891A1D3B34A0007112AD /* youMuTouUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B6E891B1D3B34A0007112AD /* youMuTouUITests.m */,
+				8B6E891D1D3B34A0007112AD /* Info.plist */,
+			);
+			path = youMuTouUITests;
+			sourceTree = "<group>";
+		};
+		8B6E89291D3B34EA007112AD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8B0BDEFE1D431EFC00A2D072 /* Login */,
+				8B44C23C1D4217760090C940 /* NetWork */,
+				8B6E892A1D3B34EA007112AD /* Home */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8B6E892A1D3B34EA007112AD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8B6E892B1D3B34EA007112AD /* Controller */,
+				8B6E892C1D3B34EA007112AD /* Model */,
+				8B6E892D1D3B34EA007112AD /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8B6E892B1D3B34EA007112AD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8B6E892F1D3B357E007112AD /* HomeViewController.h */,
+				8B6E89301D3B357E007112AD /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8B6E892C1D3B34EA007112AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B285F6B1D3CC638006BE46F /* YMTableContentModel.h */,
+				8B285F6C1D3CC638006BE46F /* YMTableContentModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B6E892D1D3B34EA007112AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B6E89361D3B3C34007112AD /* YMNavgationView.h */,
+				8B6E89371D3B3C34007112AD /* YMNavgationView.m */,
+				8B6E89391D3B878B007112AD /* YMNavgationView.xib */,
+				8B6E893B1D3B8DB2007112AD /* YMHomeTableHeadView.h */,
+				8B6E893C1D3B8DB2007112AD /* YMHomeTableHeadView.m */,
+				8B285F5E1D3CACCC006BE46F /* YMTableViewCell.h */,
+				8B285F5F1D3CACCC006BE46F /* YMTableViewCell.m */,
+				8B285F601D3CACCC006BE46F /* YMTableViewCell.xib */,
+				8B285F631D3CB19E006BE46F /* YMTableViewContentCell.h */,
+				8B285F641D3CB19E006BE46F /* YMTableViewContentCell.m */,
+				8B285F651D3CB19E006BE46F /* YMTableViewContentCell.xib */,
+				8B285F681D3CB1F4006BE46F /* YMTableViewContent.h */,
+				8B285F691D3CB1F4006BE46F /* YMTableViewContent.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B6E892E1D3B3516007112AD /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				8B6E88FF1D3B34A0007112AD /* Main.storyboard */,
+				8B6E89041D3B34A0007112AD /* LaunchScreen.storyboard */,
+				8B6E88F91D3B34A0007112AD /* AppDelegate.h */,
+				8B6E88FA1D3B34A0007112AD /* AppDelegate.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B6E88F21D3B349F007112AD /* youMuTou */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B6E89201D3B34A0007112AD /* Build configuration list for PBXNativeTarget "youMuTou" */;
+			buildPhases = (
+				165C5C2789A8DCCDBC7C06CC /* Check Pods Manifest.lock */,
+				8B6E88EF1D3B349F007112AD /* Sources */,
+				8B6E88F01D3B349F007112AD /* Frameworks */,
+				8B6E88F11D3B349F007112AD /* Resources */,
+				E989324ECFCFC2FA77DE9803 /* Embed Pods Frameworks */,
+				AAD1D2E427401734FA2D6B9A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = youMuTou;
+			productName = youMuTou;
+			productReference = 8B6E88F31D3B349F007112AD /* youMuTou.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B6E890B1D3B34A0007112AD /* youMuTouTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B6E89231D3B34A0007112AD /* Build configuration list for PBXNativeTarget "youMuTouTests" */;
+			buildPhases = (
+				8B6E89081D3B34A0007112AD /* Sources */,
+				8B6E89091D3B34A0007112AD /* Frameworks */,
+				8B6E890A1D3B34A0007112AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B6E890E1D3B34A0007112AD /* PBXTargetDependency */,
+			);
+			name = youMuTouTests;
+			productName = youMuTouTests;
+			productReference = 8B6E890C1D3B34A0007112AD /* youMuTouTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B6E89161D3B34A0007112AD /* youMuTouUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B6E89261D3B34A0007112AD /* Build configuration list for PBXNativeTarget "youMuTouUITests" */;
+			buildPhases = (
+				8B6E89131D3B34A0007112AD /* Sources */,
+				8B6E89141D3B34A0007112AD /* Frameworks */,
+				8B6E89151D3B34A0007112AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B6E89191D3B34A0007112AD /* PBXTargetDependency */,
+			);
+			name = youMuTouUITests;
+			productName = youMuTouUITests;
+			productReference = 8B6E89171D3B34A0007112AD /* youMuTouUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B6E88EB1D3B349F007112AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YM;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = HuangTao;
+				TargetAttributes = {
+					8B6E88F21D3B349F007112AD = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					8B6E890B1D3B34A0007112AD = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 8B6E88F21D3B349F007112AD;
+					};
+					8B6E89161D3B34A0007112AD = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 8B6E88F21D3B349F007112AD;
+					};
+				};
+			};
+			buildConfigurationList = 8B6E88EE1D3B349F007112AD /* Build configuration list for PBXProject "youMuTou" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B6E88EA1D3B349F007112AD;
+			productRefGroup = 8B6E88F41D3B349F007112AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B6E88F21D3B349F007112AD /* youMuTou */,
+				8B6E890B1D3B34A0007112AD /* youMuTouTests */,
+				8B6E89161D3B34A0007112AD /* youMuTouUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B6E88F11D3B349F007112AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B6E893A1D3B878B007112AD /* YMNavgationView.xib in Resources */,
+				8B0BDF061D431F4100A2D072 /* YMLoginAndRegisteController.xib in Resources */,
+				8B6E89061D3B34A0007112AD /* LaunchScreen.storyboard in Resources */,
+				8B285F621D3CACCC006BE46F /* YMTableViewCell.xib in Resources */,
+				8B6E89031D3B34A0007112AD /* Assets.xcassets in Resources */,
+				8B6E89011D3B34A0007112AD /* Main.storyboard in Resources */,
+				8B285F711D3CD3BF006BE46F /* data.plist in Resources */,
+				8B285F671D3CB19E006BE46F /* YMTableViewContentCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6E890A1D3B34A0007112AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6E89151D3B34A0007112AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		165C5C2789A8DCCDBC7C06CC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AAD1D2E427401734FA2D6B9A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-youMuTou/Pods-youMuTou-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E989324ECFCFC2FA77DE9803 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-youMuTou/Pods-youMuTou-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B6E88EF1D3B349F007112AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B44C23F1D42178E0090C940 /* YMNetWorkManager.m in Sources */,
+				8B285F661D3CB19E006BE46F /* YMTableViewContentCell.m in Sources */,
+				8B6E893D1D3B8DB2007112AD /* YMHomeTableHeadView.m in Sources */,
+				8B285F611D3CACCC006BE46F /* YMTableViewCell.m in Sources */,
+				8B285F6A1D3CB1F4006BE46F /* YMTableViewContent.m in Sources */,
+				8B6E89381D3B3C34007112AD /* YMNavgationView.m in Sources */,
+				8B6E88FB1D3B34A0007112AD /* AppDelegate.m in Sources */,
+				8B0BDF051D431F4100A2D072 /* YMLoginAndRegisteController.m in Sources */,
+				8B6E88F81D3B34A0007112AD /* main.m in Sources */,
+				8B6E89311D3B357E007112AD /* HomeViewController.m in Sources */,
+				8B285F6D1D3CC638006BE46F /* YMTableContentModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6E89081D3B34A0007112AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B6E89111D3B34A0007112AD /* youMuTouTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6E89131D3B34A0007112AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B6E891C1D3B34A0007112AD /* youMuTouUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B6E890E1D3B34A0007112AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B6E88F21D3B349F007112AD /* youMuTou */;
+			targetProxy = 8B6E890D1D3B34A0007112AD /* PBXContainerItemProxy */;
+		};
+		8B6E89191D3B34A0007112AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B6E88F21D3B349F007112AD /* youMuTou */;
+			targetProxy = 8B6E89181D3B34A0007112AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B6E88FF1D3B34A0007112AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B6E89001D3B34A0007112AD /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		8B6E89041D3B34A0007112AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B6E89051D3B34A0007112AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B6E891E1D3B34A0007112AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8B6E891F1D3B34A0007112AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B6E89211D3B34A0007112AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F02D159E085342F17DBEFE11 /* Pods-youMuTou.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = youMuTou/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HuangTao.youMuTou;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Debug;
+		};
+		8B6E89221D3B34A0007112AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05EB8EF9AF1B713048EB4D78 /* Pods-youMuTou.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = youMuTou/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HuangTao.youMuTou;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Release;
+		};
+		8B6E89241D3B34A0007112AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = youMuTouTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HuangTao.youMuTouTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/youMuTou.app/youMuTou";
+			};
+			name = Debug;
+		};
+		8B6E89251D3B34A0007112AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = youMuTouTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HuangTao.youMuTouTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/youMuTou.app/youMuTou";
+			};
+			name = Release;
+		};
+		8B6E89271D3B34A0007112AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = youMuTouUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HuangTao.youMuTouUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = youMuTou;
+			};
+			name = Debug;
+		};
+		8B6E89281D3B34A0007112AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = youMuTouUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HuangTao.youMuTouUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = youMuTou;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B6E88EE1D3B349F007112AD /* Build configuration list for PBXProject "youMuTou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B6E891E1D3B34A0007112AD /* Debug */,
+				8B6E891F1D3B34A0007112AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B6E89201D3B34A0007112AD /* Build configuration list for PBXNativeTarget "youMuTou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B6E89211D3B34A0007112AD /* Debug */,
+				8B6E89221D3B34A0007112AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B6E89231D3B34A0007112AD /* Build configuration list for PBXNativeTarget "youMuTouTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B6E89241D3B34A0007112AD /* Debug */,
+				8B6E89251D3B34A0007112AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B6E89261D3B34A0007112AD /* Build configuration list for PBXNativeTarget "youMuTouUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B6E89271D3B34A0007112AD /* Debug */,
+				8B6E89281D3B34A0007112AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B6E88EB1D3B349F007112AD /* Project object */;
+}
