@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>price</key>
+			<integer>1920</integer>
+			<key>packetNum</key>
+			<real>3.369</real>
+			<key>bagNums</key>
+			<string>638</string>
+			<key>Specifications</key>
+			<string>16 * 100 * 3300	</string>
+		</dict>
+		<dict>
+			<key>price</key>
+			<integer>1920</integer>
+			<key>packetNum</key>
+			<real>3.669</real>
+			<key>bagNums</key>
+			<string>637</string>
+			<key>Specifications</key>
+			<string>16 * 100 * 3300	</string>
+		</dict>
+		<dict>
+			<key>price</key>
+			<integer>1920</integer>
+			<key>packetNum</key>
+			<real>3.444</real>
+			<key>bagNums</key>
+			<string>598</string>
+			<key>Specifications</key>
+			<string>16 * 100 * 3600	</string>
+		</dict>
+		<dict>
+			<key>price</key>
+			<integer>1920</integer>
+			<key>packetNum</key>
+			<real>3.975</real>
+			<key>bagNums</key>
+			<string>637</string>
+			<key>Specifications</key>
+			<string>16 * 100 * 3900	</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>price</key>
+			<integer>2200</integer>
+			<key>packetNum</key>
+			<real>2.727</real>
+			<key>bagNums</key>
+			<string>319</string>
+			<key>Specifications</key>
+			<string>25 * 95 * 3600</string>
+		</dict>
+		<dict>
+			<key>price</key>
+			<integer>1660</integer>
+			<key>packetNum</key>
+			<real>3.635</real>
+			<key>bagNums</key>
+			<string>160</string>
+			<key>Specifications</key>
+			<string>38 * 140 * 4270	</string>
+		</dict>
+		<dict>
+			<key>price</key>
+			<integer>1450</integer>
+			<key>packetNum</key>
+			<real>2.453</real>
+			<key>bagNums</key>
+			<string>189</string>
+			<key>Specifications</key>
+			<string>38 * 140 * 2440</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>price</key>
+			<integer>2000</integer>
+			<key>packetNum</key>
+			<real>1.381</real>
+			<key>bagNums</key>
+			<string>209</string>
+			<key>Specifications</key>
+			<string>38 * 95 * 1830</string>
+		</dict>
+		<dict>
+			<key>price</key>
+			<integer>2000</integer>
+			<key>packetNum</key>
+			<real>0.311</real>
+			<key>bagNums</key>
+			<string>48</string>
+			<key>Specifications</key>
+			<string>16 * 135 * 3000	</string>
+		</dict>
+		<dict>
+			<key>price</key>
+			<integer>2000</integer>
+			<key>packetNum</key>
+			<real>3.935</real>
+			<key>bagNums</key>
+			<string>840</string>
+			<key>Specifications</key>
+			<string>16 * 75 * 4510	</string>
+		</dict>
+	</array>
+</array>
+</plist>

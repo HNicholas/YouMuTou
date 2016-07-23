@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YMNavgationView">
+            <rect key="frame" x="0.0" y="0.0" width="286" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwa-ON-8in">
+                    <rect key="frame" x="10" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="Ry9-au-7Se"/>
+                        <constraint firstAttribute="height" constant="44" id="wRU-bK-b6H"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="logo"/>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UI3-Qy-0HX">
+                    <rect key="frame" x="64" y="8" width="158" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8p-gb-Lxu">
+                    <rect key="frame" x="232" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="5Js-TV-bau"/>
+                        <constraint firstAttribute="height" constant="44" id="rAU-89-HsB"/>
+                    </constraints>
+                    <state key="normal" title="搜索"/>
+                    <connections>
+                        <action selector="searchBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="9vr-MG-Fle"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="O8p-gb-Lxu" firstAttribute="leading" secondItem="UI3-Qy-0HX" secondAttribute="trailing" constant="10" id="Bb5-Hw-tmU"/>
+                <constraint firstItem="UI3-Qy-0HX" firstAttribute="baseline" secondItem="Pwa-ON-8in" secondAttribute="baseline" id="R8a-ji-nyN"/>
+                <constraint firstItem="UI3-Qy-0HX" firstAttribute="leading" secondItem="Pwa-ON-8in" secondAttribute="trailing" constant="10" id="TBf-EY-rK3"/>
+                <constraint firstItem="UI3-Qy-0HX" firstAttribute="baseline" secondItem="O8p-gb-Lxu" secondAttribute="baseline" id="WEh-VN-EDW"/>
+                <constraint firstItem="O8p-gb-Lxu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Zel-tl-dWo"/>
+                <constraint firstAttribute="trailing" secondItem="O8p-gb-Lxu" secondAttribute="trailing" constant="10" id="kCO-Mt-7YE"/>
+                <constraint firstItem="Pwa-ON-8in" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="ntf-uD-bJA"/>
+                <constraint firstItem="Pwa-ON-8in" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wWM-DG-b1T"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="searchTextField" destination="UI3-Qy-0HX" id="vDt-7g-nFj"/>
+            </connections>
+            <point key="canvasLocation" x="255" y="189"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="235" height="100"/>
+    </resources>
+</document>
