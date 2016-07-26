@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B08B5A91D476BF20003F840 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B08B5A81D476BF20003F840 /* libsqlite3.tbd */; };
 		8B0BDF051D431F4100A2D072 /* YMLoginAndRegisteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BDF031D431F4100A2D072 /* YMLoginAndRegisteController.m */; };
 		8B0BDF061D431F4100A2D072 /* YMLoginAndRegisteController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B0BDF041D431F4100A2D072 /* YMLoginAndRegisteController.xib */; };
 		8B285F611D3CACCC006BE46F /* YMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B285F5F1D3CACCC006BE46F /* YMTableViewCell.m */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		05EB8EF9AF1B713048EB4D78 /* Pods-youMuTou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-youMuTou.release.xcconfig"; path = "Pods/Target Support Files/Pods-youMuTou/Pods-youMuTou.release.xcconfig"; sourceTree = "<group>"; };
+		8B08B5A81D476BF20003F840 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		8B0BDF021D431F4100A2D072 /* YMLoginAndRegisteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMLoginAndRegisteController.h; sourceTree = "<group>"; };
 		8B0BDF031D431F4100A2D072 /* YMLoginAndRegisteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMLoginAndRegisteController.m; sourceTree = "<group>"; };
 		8B0BDF041D431F4100A2D072 /* YMLoginAndRegisteController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMLoginAndRegisteController.xib; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B08B5A91D476BF20003F840 /* libsqlite3.tbd in Frameworks */,
 				8ED70E840202DF61E6F8F9A3 /* libPods-youMuTou.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,6 +123,7 @@
 		21F078F7A0D1CA1C0F1EB808 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B08B5A81D476BF20003F840 /* libsqlite3.tbd */,
 				C68B2336AD44B1096EE39999 /* libPods-youMuTou.a */,
 			);
 			name = Frameworks;
