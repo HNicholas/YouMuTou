@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8B08B5A91D476BF20003F840 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B08B5A81D476BF20003F840 /* libsqlite3.tbd */; };
+		8B08B5AC1D476CE90003F840 /* YMDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B08B5AB1D476CE90003F840 /* YMDataManager.m */; };
 		8B0BDF051D431F4100A2D072 /* YMLoginAndRegisteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BDF031D431F4100A2D072 /* YMLoginAndRegisteController.m */; };
 		8B0BDF061D431F4100A2D072 /* YMLoginAndRegisteController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B0BDF041D431F4100A2D072 /* YMLoginAndRegisteController.xib */; };
 		8B285F611D3CACCC006BE46F /* YMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B285F5F1D3CACCC006BE46F /* YMTableViewCell.m */; };
@@ -52,6 +53,8 @@
 /* Begin PBXFileReference section */
 		05EB8EF9AF1B713048EB4D78 /* Pods-youMuTou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-youMuTou.release.xcconfig"; path = "Pods/Target Support Files/Pods-youMuTou/Pods-youMuTou.release.xcconfig"; sourceTree = "<group>"; };
 		8B08B5A81D476BF20003F840 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		8B08B5AA1D476CE90003F840 /* YMDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMDataManager.h; sourceTree = "<group>"; };
+		8B08B5AB1D476CE90003F840 /* YMDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMDataManager.m; sourceTree = "<group>"; };
 		8B0BDF021D431F4100A2D072 /* YMLoginAndRegisteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMLoginAndRegisteController.h; sourceTree = "<group>"; };
 		8B0BDF031D431F4100A2D072 /* YMLoginAndRegisteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMLoginAndRegisteController.m; sourceTree = "<group>"; };
 		8B0BDF041D431F4100A2D072 /* YMLoginAndRegisteController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMLoginAndRegisteController.xib; sourceTree = "<group>"; };
@@ -178,6 +181,8 @@
 			children = (
 				8B44C23D1D42178E0090C940 /* YMNetWorkManager.h */,
 				8B44C23E1D42178E0090C940 /* YMNetWorkManager.m */,
+				8B08B5AA1D476CE90003F840 /* YMDataManager.h */,
+				8B08B5AB1D476CE90003F840 /* YMDataManager.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -500,6 +505,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B44C23F1D42178E0090C940 /* YMNetWorkManager.m in Sources */,
+				8B08B5AC1D476CE90003F840 /* YMDataManager.m in Sources */,
 				8B285F661D3CB19E006BE46F /* YMTableViewContentCell.m in Sources */,
 				8B6E893D1D3B8DB2007112AD /* YMHomeTableHeadView.m in Sources */,
 				8B285F611D3CACCC006BE46F /* YMTableViewCell.m in Sources */,

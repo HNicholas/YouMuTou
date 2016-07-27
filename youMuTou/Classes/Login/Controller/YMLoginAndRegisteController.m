@@ -9,6 +9,7 @@
 #import "YMLoginAndRegisteController.h"
 #import "YMNetWorkManager.h"
 #import "HomeViewController.h"
+#import "YMDataManager.h"
 
 @interface YMLoginAndRegisteController ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
@@ -31,6 +32,27 @@
 - (IBAction)registerBtnClick:(id)sender {
     if (_userNameTextField.text.length != 0 && ![_userNameTextField.text isEqualToString:@""] && _passwordTextField.text.length != 0  &&![_passwordTextField.text isEqualToString:@""]) {
         //[self postRegistrtRequestWithUsername:_userNameTextField.text password:_passwordTextField.text];
+        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+        [dict setObject:_userNameTextField.text forKey:@"username"];
+        [dict setObject:_passwordTextField.text forKey:@"token"];
+        if ([[YMDataManager sharedDataManger] addUserWithDict:dict]) {
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示"message:@"注册成功" preferredStyle:  UIAlertControllerStyleAlert];
+            [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                [self dismissViewControllerAnimated:YES completion:nil];
+            }]];
+
+            [self presentViewController:alert animated:true completion:nil];
+            
+        }else {
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示"message:@"该用户名已经注册" preferredStyle:  UIAlertControllerStyleAlert];
+            [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                [self dismissViewControllerAnimated:YES completion:nil];
+            }]];
+            
+            //弹出提示框；
+            [self presentViewController:alert animated:true completion:nil];
+ 
+        }
     }
     
 }
@@ -46,6 +68,10 @@
     [manager postRequestWithParameter:dict url:url successBlock:^(id responseBody) {
         
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示"message:@"注册成功" preferredStyle:  UIAlertControllerStyleAlert];
+        [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }]];
+
         [self presentViewController:alert animated:true completion:nil];
         
     } failureBlock:^(NSString *error) {
@@ -73,15 +99,33 @@
         [UIApplication sharedApplication].keyWindow.rootViewController = [[HomeViewController alloc] init];
     } failureBlock:^(NSString *error) {
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示"message:@"用户名或密码不正确" preferredStyle:  UIAlertControllerStyleAlert];
+        [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }]];
+
         [self presentViewController:alert animated:true completion:nil];
     }];
 
 }
 
 - (IBAction)loginBtnClick:(id)sender {
-    
-    
-    
+    if (_userNameTextField.text.length != 0 && ![_userNameTextField.text isEqualToString:@""] && _passwordTextField.text.length != 0  &&![_passwordTextField.text isEqualToString:@""]) {
+        //[self postRegistrtRequestWithUsername:_userNameTextField.text password:_passwordTextField.text];
+        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+        [dict setObject:_userNameTextField.text forKey:@"username"];
+        [dict setObject:_passwordTextField.text forKey:@"token"];
+        if ([[YMDataManager sharedDataManger] checkUserLoginWithDict:dict]) {
+            [UIApplication sharedApplication].keyWindow.rootViewController = [[HomeViewController alloc] init];
+            
+        } else {
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示"message:@"用户名或密码不正确" preferredStyle:  UIAlertControllerStyleAlert];
+            [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                [self dismissViewControllerAnimated:YES completion:nil];
+            }]];
+
+            [self presentViewController:alert animated:true completion:nil];
+        }
+    }
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
