@@ -30,6 +30,11 @@
 		8B6E89381D3B3C34007112AD /* YMNavgationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6E89371D3B3C34007112AD /* YMNavgationView.m */; };
 		8B6E893A1D3B878B007112AD /* YMNavgationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B6E89391D3B878B007112AD /* YMNavgationView.xib */; };
 		8B6E893D1D3B8DB2007112AD /* YMHomeTableHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6E893C1D3B8DB2007112AD /* YMHomeTableHeadView.m */; };
+		8BF4A7DD1D5F0CBF008F02CF /* YMGoodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF4A7DC1D5F0CBF008F02CF /* YMGoodsViewController.m */; };
+		8BF4A7E11D5F0E57008F02CF /* YMShowGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF4A7DF1D5F0E57008F02CF /* YMShowGoodsCell.m */; };
+		8BF4A7E21D5F0E57008F02CF /* YMShowGoodsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BF4A7E01D5F0E57008F02CF /* YMShowGoodsCell.xib */; };
+		8BF4A7E51D5F2E69008F02CF /* YMShowTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF4A7E41D5F2E69008F02CF /* YMShowTitleView.m */; };
+		8BF4A7E71D5F2E95008F02CF /* YMShowTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BF4A7E61D5F2E95008F02CF /* YMShowTitleView.xib */; };
 		8ED70E840202DF61E6F8F9A3 /* libPods-youMuTou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C68B2336AD44B1096EE39999 /* libPods-youMuTou.a */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +97,14 @@
 		8B6E89391D3B878B007112AD /* YMNavgationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMNavgationView.xib; sourceTree = "<group>"; };
 		8B6E893B1D3B8DB2007112AD /* YMHomeTableHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMHomeTableHeadView.h; sourceTree = "<group>"; };
 		8B6E893C1D3B8DB2007112AD /* YMHomeTableHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMHomeTableHeadView.m; sourceTree = "<group>"; };
+		8BF4A7DB1D5F0CBF008F02CF /* YMGoodsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMGoodsViewController.h; sourceTree = "<group>"; };
+		8BF4A7DC1D5F0CBF008F02CF /* YMGoodsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMGoodsViewController.m; sourceTree = "<group>"; };
+		8BF4A7DE1D5F0E57008F02CF /* YMShowGoodsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMShowGoodsCell.h; sourceTree = "<group>"; };
+		8BF4A7DF1D5F0E57008F02CF /* YMShowGoodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMShowGoodsCell.m; sourceTree = "<group>"; };
+		8BF4A7E01D5F0E57008F02CF /* YMShowGoodsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMShowGoodsCell.xib; sourceTree = "<group>"; };
+		8BF4A7E31D5F2E69008F02CF /* YMShowTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMShowTitleView.h; sourceTree = "<group>"; };
+		8BF4A7E41D5F2E69008F02CF /* YMShowTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMShowTitleView.m; sourceTree = "<group>"; };
+		8BF4A7E61D5F2E95008F02CF /* YMShowTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMShowTitleView.xib; sourceTree = "<group>"; };
 		C68B2336AD44B1096EE39999 /* libPods-youMuTou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-youMuTou.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F02D159E085342F17DBEFE11 /* Pods-youMuTou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-youMuTou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-youMuTou/Pods-youMuTou.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -251,6 +264,7 @@
 		8B6E89291D3B34EA007112AD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8BF4A7D71D5F0C76008F02CF /* MyGoods */,
 				8B0BDEFE1D431EFC00A2D072 /* Login */,
 				8B44C23C1D4217760090C940 /* NetWork */,
 				8B6E892A1D3B34EA007112AD /* Home */,
@@ -315,6 +329,45 @@
 				8B6E88FA1D3B34A0007112AD /* AppDelegate.m */,
 			);
 			path = Others;
+			sourceTree = "<group>";
+		};
+		8BF4A7D71D5F0C76008F02CF /* MyGoods */ = {
+			isa = PBXGroup;
+			children = (
+				8BF4A7D81D5F0C76008F02CF /* Controller */,
+				8BF4A7D91D5F0C76008F02CF /* Model */,
+				8BF4A7DA1D5F0C76008F02CF /* View */,
+			);
+			path = MyGoods;
+			sourceTree = "<group>";
+		};
+		8BF4A7D81D5F0C76008F02CF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8BF4A7DB1D5F0CBF008F02CF /* YMGoodsViewController.h */,
+				8BF4A7DC1D5F0CBF008F02CF /* YMGoodsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8BF4A7D91D5F0C76008F02CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8BF4A7DA1D5F0C76008F02CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8BF4A7DE1D5F0E57008F02CF /* YMShowGoodsCell.h */,
+				8BF4A7DF1D5F0E57008F02CF /* YMShowGoodsCell.m */,
+				8BF4A7E01D5F0E57008F02CF /* YMShowGoodsCell.xib */,
+				8BF4A7E31D5F2E69008F02CF /* YMShowTitleView.h */,
+				8BF4A7E41D5F2E69008F02CF /* YMShowTitleView.m */,
+				8BF4A7E61D5F2E95008F02CF /* YMShowTitleView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,7 +477,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BF4A7E21D5F0E57008F02CF /* YMShowGoodsCell.xib in Resources */,
 				8B6E893A1D3B878B007112AD /* YMNavgationView.xib in Resources */,
+				8BF4A7E71D5F2E95008F02CF /* YMShowTitleView.xib in Resources */,
 				8B0BDF061D431F4100A2D072 /* YMLoginAndRegisteController.xib in Resources */,
 				8B6E89061D3B34A0007112AD /* LaunchScreen.storyboard in Resources */,
 				8B285F621D3CACCC006BE46F /* YMTableViewCell.xib in Resources */,
@@ -506,8 +561,11 @@
 			files = (
 				8B44C23F1D42178E0090C940 /* YMNetWorkManager.m in Sources */,
 				8B08B5AC1D476CE90003F840 /* YMDataManager.m in Sources */,
+				8BF4A7DD1D5F0CBF008F02CF /* YMGoodsViewController.m in Sources */,
 				8B285F661D3CB19E006BE46F /* YMTableViewContentCell.m in Sources */,
+				8BF4A7E51D5F2E69008F02CF /* YMShowTitleView.m in Sources */,
 				8B6E893D1D3B8DB2007112AD /* YMHomeTableHeadView.m in Sources */,
+				8BF4A7E11D5F0E57008F02CF /* YMShowGoodsCell.m in Sources */,
 				8B285F611D3CACCC006BE46F /* YMTableViewCell.m in Sources */,
 				8B285F6A1D3CB1F4006BE46F /* YMTableViewContent.m in Sources */,
 				8B6E89381D3B3C34007112AD /* YMNavgationView.m in Sources */,

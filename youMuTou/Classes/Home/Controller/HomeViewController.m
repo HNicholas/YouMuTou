@@ -10,11 +10,13 @@
 #import "YMNavgationView.h"
 #import "YMHomeTableHeadView.h"
 #import "YMTableViewCell.h"
+#import "YMGoodsViewController.h"
 
 @interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong) UITableView *contentTableView;
 @property(nonatomic, strong) NSArray *data;
 @property(nonatomic, strong) YMHomeTableHeadView *homeHeadView;
+@property(nonatomic, strong) YMGoodsViewController *goodsViewController;
 
 @end
 
@@ -24,6 +26,8 @@
 {
     [super viewWillAppear:animated];
     [self.navigationController.navigationBar addSubview:[YMNavgationView createNavgationView]];
+    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+    [center addObserver:self selector:@selector(presentMyGoodsView) name:@"addBtnClick" object:nil];
 }
 
 - (UITableView *)contentTableView
@@ -49,6 +53,14 @@
     return _homeHeadView;
 }
 
+- (YMGoodsViewController *)goodsViewController
+{
+    if (!_goodsViewController) {
+        _goodsViewController = [[YMGoodsViewController alloc] init];
+    }
+    return _goodsViewController;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -60,6 +72,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)presentMyGoodsView
+{
+    UINavigationController *nav =[[UINavigationController alloc] initWithRootViewController:self.goodsViewController];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 #pragma mark - tableView

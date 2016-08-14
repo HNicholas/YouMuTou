@@ -25,8 +25,7 @@
 }
 
 - (IBAction)seeBtnClick:(id)sender {
-    
-    
+    self.passwordTextField.secureTextEntry = !self.passwordTextField.secureTextEntry;
 }
 
 - (IBAction)registerBtnClick:(id)sender {
@@ -115,7 +114,8 @@
         [dict setObject:_userNameTextField.text forKey:@"username"];
         [dict setObject:_passwordTextField.text forKey:@"token"];
         if ([[YMDataManager sharedDataManger] checkUserLoginWithDict:dict]) {
-            [UIApplication sharedApplication].keyWindow.rootViewController = [[HomeViewController alloc] init];
+            UINavigationController *nav =[[UINavigationController alloc] initWithRootViewController:[[HomeViewController alloc] init]];
+            [UIApplication sharedApplication].keyWindow.rootViewController = nav;
             
         } else {
             UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示"message:@"用户名或密码不正确" preferredStyle:  UIAlertControllerStyleAlert];

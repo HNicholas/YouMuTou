@@ -27,7 +27,7 @@ static NSString * identifer = @"TableViewContentCell";
     // Initialization code
 }
 - (IBAction)addBtnClick:(id)sender {
-    NSLog(@"%@",sender);
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"addBtnClick" object:nil userInfo:nil];
 }
 
 + (instancetype)cellWithTableView:(UITableView *)tableView
