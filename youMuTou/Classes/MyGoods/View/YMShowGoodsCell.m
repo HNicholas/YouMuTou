@@ -7,14 +7,23 @@
 //
 
 #import "YMShowGoodsCell.h"
+#import "YMTableViewContentCell.h"
 
 static NSString * identifer = @"ShowGoodsCell";
+
+@interface YMShowGoodsCell ()<UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *goodsContentView;
+
+@end
 
 @implementation YMShowGoodsCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    _goodsContentView.delegate = self;
+    _goodsContentView.dataSource = self;
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -31,6 +40,19 @@ static NSString * identifer = @"ShowGoodsCell";
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return  cell;
+}
+
+#pragma mark - TableView
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 2;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    YMTableViewContentCell *cell = [YMTableViewContentCell cellWithTableView:tableView];
+    return cell;
 }
 
 @end

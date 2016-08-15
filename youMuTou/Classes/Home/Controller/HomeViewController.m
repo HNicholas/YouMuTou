@@ -26,9 +26,8 @@
 {
     [super viewWillAppear:animated];
     [self.navigationController.navigationBar addSubview:[YMNavgationView createNavgationView]];
-    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
-    [center addObserver:self selector:@selector(presentMyGoodsView) name:@"addBtnClick" object:nil];
 }
+
 
 - (UITableView *)contentTableView
 {
@@ -66,7 +65,8 @@
     // Do any additional setup after loading the view.
     [self createData];
     [self.contentTableView reloadData];
-    
+    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+    [center addObserver:self selector:@selector(presentMyGoodsView) name:@"addBtnClick" object:nil];
 }
 
 - (void)didReceiveMemoryWarning {

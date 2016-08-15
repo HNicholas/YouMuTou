@@ -15,7 +15,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="284" height="266"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WnL-b4-Ar5" userLabel="ContentView">
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" scrollEnabled="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WnL-b4-Ar5" userLabel="ContentView">
                         <rect key="frame" x="8" y="68" width="253" height="147"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tableView>
@@ -28,7 +28,7 @@
                                     <constraint firstAttribute="height" constant="20" id="nQ2-ov-ViK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVt-Ml-BKZ">
@@ -81,7 +81,7 @@
                                     <constraint firstAttribute="width" constant="42" id="iVl-Sz-Uhm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -115,7 +115,7 @@
                                     <constraint firstAttribute="width" constant="42" id="Cg8-gC-XMm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -153,6 +153,9 @@
                     <constraint firstItem="dwA-ii-4O2" firstAttribute="top" secondItem="WnL-b4-Ar5" secondAttribute="bottom" constant="1" id="vNn-Aj-lbx"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="goodsContentView" destination="WnL-b4-Ar5" id="5U4-4c-4f2"/>
+            </connections>
             <point key="canvasLocation" x="274" y="406.5"/>
         </tableViewCell>
     </objects>

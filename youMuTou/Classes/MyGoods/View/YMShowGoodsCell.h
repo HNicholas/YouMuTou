@@ -11,4 +11,6 @@
 @interface YMShowGoodsCell : UITableViewCell
 
 + (instancetype)cellWithTableView:(UITableView *)tableView;
+
+
 @end

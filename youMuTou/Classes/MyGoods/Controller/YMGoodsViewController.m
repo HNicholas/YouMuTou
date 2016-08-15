@@ -31,6 +31,7 @@ enum {
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(backToLastView)];
     self.title = @"我的货物";
     [self.goodsShowView reloadData];
 }
@@ -43,6 +44,8 @@ enum {
         _goodsShowView.dataSource = self;
         _goodsShowView.tableHeaderView = self.segmentHeadView;
         _goodsShowView.backgroundColor = [UIColor whiteColor];
+        _goodsShowView.showsVerticalScrollIndicator = NO;
+        _goodsShowView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [self.view addSubview:_goodsShowView];
     }
     return _goodsShowView;
@@ -61,7 +64,9 @@ enum {
 {
     if (!_segmentSeeView) {
         _segmentSeeView = [[UISegmentedControl alloc] initWithItems:@[@"按仓库查看",@"按品名查看"]];
-        _segmentSeeView.frame = CGRectMake(0, 0, self.view.frame.size.width, 40);
+        _segmentSeeView.selectedSegmentIndex = 0;
+        _segmentSeeView.frame = CGRectMake(0, 0, self.view.frame.size.width, 35);
+        [_segmentSeeView addTarget:self action:@selector(seeViewDidChange:) forControlEvents:UIControlEventValueChanged];
     }
     return _segmentSeeView;
 }
@@ -74,6 +79,22 @@ enum {
     return _titleView;
 }
 
+
+- (void)backToLastView
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)seeViewDidChange:(UISegmentedControl *)control
+{
+    if(control.selectedSegmentIndex == 0) {
+        self.goodsShowView.backgroundColor = [UIColor whiteColor];
+    } else {
+        self.goodsShowView.backgroundColor = [UIColor yellowColor];
+    }
+}
+
+#pragma mark - tableView
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return ShowCell2+1;
@@ -116,7 +137,7 @@ enum {
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 10)];
-    view.backgroundColor = [UIColor grayColor];
+    view.backgroundColor = [UIColor lightGrayColor];
     return view;
 }
 
@@ -125,7 +146,7 @@ enum {
     switch (indexPath.section) {
         case 0:
         case 1:
-            return 25;
+            return 20;
             break;
         case 2:
         case 3:
